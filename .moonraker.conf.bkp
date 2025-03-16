@@ -55,13 +55,15 @@ install_script = install.sh
 managed_services = 
 	moonraker-obico
 
-[update_manager Kevins-Awesome-Macros]
+[update_manager afc-software]
 type = git_repo
-channel = dev
-path = ~/Kevins-Awesome-Macros
-origin = https://github.com/Department-of-Design/Kevins-Awesome-Macros.git
+path = ~/AFC-Klipper-Add-On
+origin = https://github.com/thomasfjen/AFC-Klipper-Add-On.git
 managed_services = klipper
 primary_branch = main
+is_system_service = False
+info_tags = 
+	desc=AFC Klipper Add On
 
 [update_manager klipper_tmc_autotune]
 type = git_repo
